@@ -6,7 +6,7 @@ public class game
 		static String coordinates;
 		static int row;
 		static int col;
-		static String[][] grid=new String[2][2];
+		static String[][] grid=new String[4][4];
 		static String[][] blankGrid={{" ", " ", " ", " "}, {" ", " ", " ", " "}, {" ", " ", " ", " "}, {" ", " ", " ", " "}};
 		public static void main(String[] args)
 			{	
@@ -80,25 +80,25 @@ public class game
 			cards.add("y");
 			cards.add("z");
 			cards.add("z");
-//			cards.add("x");
-//			cards.add("x");
-//			cards.add("p");
-//			cards.add("p");
-//			cards.add("a");
-//			cards.add("a");
-//			cards.add("f");
-//			cards.add("f");
-//			cards.add("k");
-//			cards.add("k");
-//			cards.add("q");
-//			cards.add("q");
+			cards.add("x");
+			cards.add("x");
+			cards.add("p");
+			cards.add("p");
+			cards.add("a");
+			cards.add("a");
+			cards.add("f");
+			cards.add("f");
+			cards.add("k");
+			cards.add("k");
+			cards.add("q");
+			cards.add("q");
 			int k = 0;
-			for (int i = 0; i<2; i++)
+			for (int i = 0; i<4; i++)
 				{
-					for (int j = 0; j<2; j++)
+					for (int j = 0; j<4; j++)
 						{
 							
-							int random = (int) (Math.random()*(4 - k));
+							int random = (int) (Math.random()*(16 - k));
 							grid[i][j] = cards.get(random);
 							cards.remove(random);
 							System.out.print(grid[i][j] + " ");
